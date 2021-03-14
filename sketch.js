@@ -9,7 +9,7 @@ var treeObj, stoneObj,groundObject, launcherObject;
 var mango1,mango2,mango3,mango4,mango5,mango6;
 var world,boy;
 function preload(){
-	boy=loadImage("images/boy.png");
+	boy=loadImage("boy.png");
   }
 
 function setup() {
