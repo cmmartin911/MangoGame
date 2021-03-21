@@ -44,13 +44,12 @@ function mouseReleased(){
 }
 
 function detectollision(a,b){
-	mangoBodyPosition=a.body.position
-	stoneBodyPosition=b.body.position
+	mangoBodyPosition=b.body.position
+	stoneBodyPosition=a.body.position
 
 	var distance=dist(stoneBodyPosition.x, stoneBodyPosition.y, mangoBodyPosition.x, mangoBodyPosition.y);
 	  if(distance<=a.r+b.r)
 	  {
-		  Matter.Body.setStatic(a.body,true);
 		  Matter.Body.setStatic(b.body,false);
 	  }
 }
