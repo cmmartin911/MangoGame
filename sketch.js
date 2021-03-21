@@ -51,6 +51,7 @@ function detectollision(a,b){
 	  if(distance<=a.r+b.r)
 	  {
 		  Matter.Body.setStatic(a.body,false);
+		  Matter.Body.setStatic(b.body,false);
 	  }
 }
 
